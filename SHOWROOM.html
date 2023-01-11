@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Campania Vietnam</title>
+  <link href="register-style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navBar" id="mainNavBar">
+      <img src="C:\Users\lebao\Documents\Campania Pots\Campania VN (Dec 2020)\Letterhead.png" class="imagemain">
+    <a id="aboutP" href="MAIN.html">ABOUT</a>
+    <a id="productsP" href="SEARCH.html">PRODUCTS</a>
+    <a id="showroomP" href="SHOWROOM.html">SHOWROOM</a>
+  </div>
+  <br>
+    <img src="C:\Users\lebao\Desktop\Final Website Design\map.jpg">
+
+    <div class="header">
+      <p>Visit us on location!</p>
+    </div>
+    <div class="description">
+      <p>2PGX+6R5, Khánh Bình, Tân Uyên, Bình Dương, Vietnam</p>
+      <p>Telephone: (84) 274 3639 483</p>
+      <p>Fax: (84) 056 2655 295</p>
+      <p>Email: campania@vn.com
+    </div>
+
+  </form>
+  <section class="footer">
+    <div class="footer">
+      <table style="width:100%">
+        <tbody>
+          <tr>
+            <td style="width:70%">
+              <h5 id="footerHome"><b>© 2023 Campania Vietnam. All Rights Reserved.<b></a></h5>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <script>
+    //change box color when mouseover header boxes
+    var aP = document.querySelector("#aboutP");
+    var sP = document.querySelector("#productsP");
+    var bP = document.querySelector("#showroomP");
+    aP.addEventListener("mouseover", boxColor);
+    aP.addEventListener("mouseout", boxReg);
+    sP.addEventListener("mouseover", boxColor);
+    sP.addEventListener("mouseout", boxReg);
+    bP.addEventListener("mouseover", boxColor);
+    bP.addEventListener("mouseout", boxReg);
+    rP.addEventListener("mouseover", boxColor);
+    rP.addEventListener("mouseout", boxReg);
+
+    function boxColor() {
+      this.style.backgroundColor = "#19543E";
+    }
+    function boxReg() {
+      this.style.backgroundColor = "transparent";
+    }
+
+    //button alerts user when clicking
+    var confirm = document.querySelector("#submit");
+    confirm.addEventListener("click", success)
+
+    function success() {
+      var signUp = document.querySelector("#email").value;
+      if (signUp.indexOf("@") > 0) {
+        alert("Check your email for further instructions!")
+      }
+      else {
+        alert("Please enter your email.")
+      }
+    }
+  </script>
+</body>
+
+</html>

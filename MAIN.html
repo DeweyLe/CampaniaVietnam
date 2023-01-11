@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Campania Vietnam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="main-style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navBar" id="mainNavBar">
+      <img src="C:\Users\lebao\Documents\Campania Pots\Campania VN (Dec 2020)\Letterhead.png" class="image2">
+    <a id="aboutP" href="MAIN.html">ABOUT</a>
+    <a id="productsP" href="SEARCH.html">PRODUCTS</a>
+    <a id="showroomP" href="SHOWROOM.html">SHOWROOM</a>
+  </div>
+
+  <form class="form1">
+
+    <div class="fade-in-image">
+      <img src="C:\Users\lebao\Desktop\Final Website Design\pots.jpg" class="image1">
+    </div>
+
+    <div class="fade-in-image">
+    <h1>Domestically crafted</h1>
+    
+
+    <h3>Landscape & Design Professionals, we're with you.</h3>
+
+    <h3>Campania’s Project Division offers landscape and design professionals online access to architectural tools, CAD downloads, spec sheets, and product photos to make specifying Campania products easy.</h3>
+
+    <h3>Additionally, we offer a hard bound product catalog for use as an easy design reference.</h3>
+
+    <h3>Our Project Division customer service staff works directly with the landscape and design trade to find solutions for the unique needs of each project and design.</h3>
+
+    <h3>Campania offers more products than those featured in our Project Division website and catalog.</h3>
+
+    <h4> Questions? Ask us.</h4>
+    
+    <br>
+    <form action="#" method="post" name="sign up for beta form">
+
+
+      <div class="container">
+      </div>
+      <div class="row">
+
+        <div class="column">
+
+          <form action="/action_page.php">
+
+            <label for="subject">Be sure to include a question mark at the end! </label>
+            <div class="input">
+              <input type="text" class="button" id="question" name="question" placeholder="Ask your question...">
+              <input type="submit" class="button" id="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </form>
+
+  </form>
+
+
+  <script>
+
+    //button alerts user when clicking
+    var confirm = document.querySelector("#submit");
+    confirm.addEventListener("click", success)
+
+    function success() {
+      var signUp = document.querySelector("#question").value;
+      if (signUp.indexOf("?") > 0) {
+        alert("Thank you. Your question has been sent!")
+      }
+      else {
+        alert("Please enter your question.")
+      }
+    }
+
+
+
+    ///////////////////////////////////////////////NavBarStarts 
+
+    var aP = document.querySelector("#aboutP");
+    var sP = document.querySelector("#productsP");
+    var bP = document.querySelector("#showroomP");
+    aP.addEventListener("mouseover", boxColor);
+    aP.addEventListener("mouseout", boxReg);
+    sP.addEventListener("mouseover", boxColor);
+    sP.addEventListener("mouseout", boxReg);
+    bP.addEventListener("mouseover", boxColor);
+    bP.addEventListener("mouseout", boxReg);
+    rP.addEventListener("mouseover", boxColor);
+    rP.addEventListener("mouseout", boxReg);
+
+    function boxColor() {
+      this.style.backgroundColor = "#19543E";
+      this.style.textcolor = "white";
+    }
+    function boxReg() {
+      this.style.backgroundColor = "transparent";
+    }
+
+///////////////////////////////////////////////NavBarEnds
+  </script>
+</body>
+
+<section class="footer">
+    <div class="footer">
+      <table style="width:100%">
+        <tbody>
+          <tr>
+            <td style="width:70%">
+              <h5 id="footerHome"><b>© 2023 Campania Vietnam. All Rights Reserved<b></a></h5>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</html>
